@@ -1,0 +1,63 @@
+<svg width="1000" height="540" viewBox="0 0 800 430" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="800" height="430" fill="white"/>
+<rect x="6" y="6" width="788" height="418" rx="8" fill="white" stroke="#D0D0D0" stroke-width="1.2"/>
+<rect x="6" y="6" width="788" height="34" rx="8" fill="#F2F2F2" stroke="#D0D0D0" stroke-width="1.2"/>
+<rect x="7" y="24" width="786" height="16" fill="#F2F2F2"/>
+<circle cx="26" cy="23" r="5" fill="#E24B4A"/><circle cx="44" cy="23" r="5" fill="#EF9F27"/><circle cx="62" cy="23" r="5" fill="#639922"/>
+<rect x="90" y="14" width="360" height="18" rx="9" fill="white" stroke="#D0D0D0" stroke-width="1"/>
+<text x="104" y="27" font-family="Arial" font-size="10" fill="#5A5A72">telemetria.ceneris.local/servidores</text>
+
+<rect x="7" y="40" width="786" height="40" fill="#1E2761"/>
+<text x="24" y="65" font-family="Arial" font-weight="bold" font-size="14" fill="white">TelemetriaWeb</text>
+<text x="190" y="65" font-family="Arial" font-size="12" fill="#CADCFC">Dashboard</text>
+<text x="272" y="65" font-family="Arial" font-weight="bold" font-size="12" fill="white">Servidores</text>
+<line x1="272" y1="71" x2="342" y2="71" stroke="white" stroke-width="2"/>
+<text x="362" y="65" font-family="Arial" font-size="12" fill="#CADCFC">Historial</text>
+<text x="776" y="65" text-anchor="end" font-family="Arial" font-size="11" fill="#CADCFC">juan.gonzales   |   Cerrar sesión</text>
+
+<text x="30" y="118" font-family="Arial" font-weight="bold" font-size="18" fill="#1A1A2E">Servidores monitoreados</text>
+<rect x="626" y="98" width="144" height="32" rx="6" fill="#1E2761"/>
+<text x="698" y="119" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="white">+ Agregar servidor</text>
+
+<!-- Table header -->
+<rect x="30" y="144" width="740" height="30" fill="#1E2761"/>
+<text x="44" y="164" font-family="Arial" font-weight="bold" font-size="12" fill="white">Nombre</text>
+<text x="210" y="164" font-family="Arial" font-weight="bold" font-size="12" fill="white">IP / Host</text>
+<text x="360" y="164" font-family="Arial" font-weight="bold" font-size="12" fill="white">Estado</text>
+<text x="540" y="164" font-family="Arial" font-weight="bold" font-size="12" fill="white">Último reporte</text>
+<text x="670" y="164" font-family="Arial" font-weight="bold" font-size="12" fill="white">Acciones</text>
+
+<!-- Row 1 -->
+<rect x="30" y="174" width="740" height="40" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+<text x="44" y="199" font-family="Arial" font-size="12" fill="#1A1A2E">Servidor-Web</text>
+<text x="210" y="199" font-family="Arial" font-size="12" fill="#1A1A2E">192.168.1.10</text>
+<rect x="360" y="185" width="100" height="20" rx="10" fill="#EAF3DE"/>
+<text x="410" y="199" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="11" fill="#3B6D11">Normal</text>
+<text x="540" y="199" font-family="Arial" font-size="12" fill="#5A5A72">hace 5 s</text>
+<text x="670" y="199" font-family="Arial" font-size="12" fill="#185FA5">Historial</text>
+<text x="735" y="199" font-family="Arial" font-size="12" fill="#185FA5">Editar</text>
+
+<!-- Row 2 -->
+<rect x="30" y="214" width="740" height="40" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1"/>
+<text x="44" y="239" font-family="Arial" font-size="12" fill="#1A1A2E">Servidor-BD</text>
+<text x="210" y="239" font-family="Arial" font-size="12" fill="#1A1A2E">192.168.1.20</text>
+<rect x="360" y="225" width="150" height="20" rx="10" fill="#FAEEDA"/>
+<text x="435" y="239" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="11" fill="#854F0B">Alerta: CPU 91%</text>
+<text x="540" y="239" font-family="Arial" font-size="12" fill="#5A5A72">hace 5 s</text>
+<text x="670" y="239" font-family="Arial" font-size="12" fill="#185FA5">Historial</text>
+<text x="735" y="239" font-family="Arial" font-size="12" fill="#185FA5">Editar</text>
+
+<!-- Row 3 -->
+<rect x="30" y="254" width="740" height="40" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+<text x="44" y="279" font-family="Arial" font-size="12" fill="#1A1A2E">Servidor-Archivos</text>
+<text x="210" y="279" font-family="Arial" font-size="12" fill="#1A1A2E">192.168.1.30</text>
+<rect x="360" y="265" width="110" height="20" rx="10" fill="#EDEDED"/>
+<text x="415" y="279" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="11" fill="#5F5E5A">Sin conexión</text>
+<text x="540" y="279" font-family="Arial" font-size="12" fill="#5A5A72">hace 12 min</text>
+<text x="670" y="279" font-family="Arial" font-size="12" fill="#185FA5">Historial</text>
+<text x="735" y="279" font-family="Arial" font-size="12" fill="#185FA5">Editar</text>
+
+<rect x="30" y="316" width="740" height="44" rx="8" fill="#E6F1FB"/>
+<text x="46" y="335" font-family="Arial" font-weight="bold" font-size="11.5" fill="#0C447C">Seguridad:</text>
+<text x="46" y="351" font-family="Arial" font-size="11" fill="#185FA5">la contraseña de cada servidor se guarda cifrada y nunca se muestra en pantalla.</text>
+</svg>
