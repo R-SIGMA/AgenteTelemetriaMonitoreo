@@ -180,16 +180,22 @@ class AppMonitor:
     # ------------------------------------------------------------------ cola y tabla
     def _revisar_cola(self):
         """Lee lo que dejó el hilo. Corre en el hilo de la ventana, por eso es seguro."""
+        # EXPLICAR 3/3 (parte 2) - app.py
+        # QUÉ:     la ventana lee lo que dejó el hilo en la cola.
+        # CÓMO:    (1) saca mensajes de la cola sin esperar, (2) muestra la lectura o el
+        #          error, (3) se vuelve a programar con after() cada 150 ms.
+        # POR QUÉ: Tkinter solo es seguro desde su propio hilo; por eso la ventana
+        #          pregunta a la cola en lugar de que el hilo la actualice.
         try:
             while True:
-                tipo, dato = self.cola.get_nowait()
+                tipo, dato = self.cola.get_nowait()                    # (1)
                 if tipo == "lectura":
-                    self._mostrar_lectura(*dato)
+                    self._mostrar_lectura(*dato)                       # (2)
                 else:
-                    self.var_estado.set(f"Error en el ciclo: {dato}")
+                    self.var_estado.set(f"Error en el ciclo: {dato}")  # (2)
         except queue.Empty:
             pass  # no hay nada nuevo; se vuelve a revisar enseguida
-        self.ventana.after(REVISION_COLA_MS, self._revisar_cola)
+        self.ventana.after(REVISION_COLA_MS, self._revisar_cola)       # (3)
 
     def _mostrar_lectura(self, lectura, estado, razones):
         if razones:
